@@ -1,5 +1,5 @@
 from kafka import KafkaConsumer
 
-consumer = KafkaConsumer('test', bootstrap_servers=['localhost:9092'])
+consumer = KafkaConsumer('bienvenida', bootstrap_servers=['localhost:9092'])
 for message in consumer:
     print(message.value.decode('utf-8'))
